@@ -48,7 +48,7 @@ public class MainClass extends Application {
         librarian.setLoginUsername("asd");
 
         librarianDAO.saveLibrarian(librarian);
-        launch();
+        launch(args);
         stopDatabase();
     }
 
