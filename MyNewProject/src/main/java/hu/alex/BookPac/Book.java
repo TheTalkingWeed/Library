@@ -73,4 +73,5 @@ public class Book {
     public void setGenre(String genre) {
         this.genre = genre;
     }
+
 }

@@ -52,7 +52,7 @@
                   <Insets />
                </GridPane.margin>
             </Label>
-            <TextField focusTraversable="false" prefHeight="35.0" prefWidth="150.0" promptText="Username" GridPane.rowIndex="2">
+            <TextField fx:id="librarianUserNameInput" focusTraversable="false" prefHeight="35.0" prefWidth="150.0" promptText="Username" GridPane.rowIndex="2">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor></TextField>
@@ -67,7 +67,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <PasswordField focusTraversable="false" prefHeight="35.0" prefWidth="150.0" promptText="Password" GridPane.rowIndex="3">
+            <PasswordField fx:id="librarianPasswordInput" focusTraversable="false" prefHeight="35.0" prefWidth="150.0" promptText="Password" GridPane.rowIndex="3">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>

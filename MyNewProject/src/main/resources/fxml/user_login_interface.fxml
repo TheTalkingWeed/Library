@@ -50,12 +50,12 @@
                   <Font name="System Bold Italic" size="21.0" />
                </font>
             </Label>
-            <TextField focusTraversable="false" prefHeight="35.0" prefWidth="150.0" promptText="Username" GridPane.rowIndex="2">
+            <TextField fx:id="userUsernameInput" focusTraversable="false" prefHeight="35.0" prefWidth="150.0" promptText="Username" GridPane.rowIndex="2">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-            <PasswordField focusTraversable="false" prefHeight="35.0" prefWidth="150.0" promptText="Password" GridPane.rowIndex="3">
+            <PasswordField fx:id="userPasswordInput" focusTraversable="false" prefHeight="35.0" prefWidth="150.0" promptText="Password" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets top="-20.0" />
                </GridPane.margin>

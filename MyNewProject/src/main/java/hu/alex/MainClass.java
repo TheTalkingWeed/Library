@@ -30,24 +30,26 @@ public class MainClass extends Application {
 
     public static void main(String[] args) throws SQLException {
         startDatabase();
-        UserDAO userDAO = new JpaUserDAO();
-        User user = new User();
-
-        user.setEmail("valami");
-        user.setFname("test1");
-        user.setLname("test1");
-
-        userDAO.saveUser(user);
-
-        LibrarianDAO librarianDAO = new JpaLibrarianDAO();
-        Librarian librarian = new Librarian();
-
-        librarian.setFname("test1");
-        librarian.setLname("test2");
-        librarian.setLoginPassword("asd");
-        librarian.setLoginUsername("asd");
-
-        librarianDAO.saveLibrarian(librarian);
+//        UserDAO userDAO = new JpaUserDAO();
+//        User user = new User();
+//
+//        user.setEmail("valami");
+//        user.setFname("test1");
+//        user.setLname("test1");
+//        user.setUsername("user1");
+//        user.setPassword("user1");
+//
+//        userDAO.saveUser(user);
+//
+//        LibrarianDAO librarianDAO = new JpaLibrarianDAO();
+//        Librarian librarian = new Librarian();
+//
+//        librarian.setFname("test1");
+//        librarian.setLname("test2");
+//        librarian.setLoginPassword("asd");
+//        librarian.setLoginUsername("asd");
+//
+//        librarianDAO.saveLibrarian(librarian);
         launch(args);
         stopDatabase();
     }
