@@ -2,13 +2,13 @@ package hu.alex;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.time.LocalDate;
+import java.util.function.BinaryOperator;
 
-import hu.alex.LibrarianPac.JpaLibrarianDAO;
-import hu.alex.LibrarianPac.Librarian;
-import hu.alex.LibrarianPac.LibrarianDAO;
-import hu.alex.UserPac.JpaUserDAO;
-import hu.alex.UserPac.User;
-import hu.alex.UserPac.UserDAO;
+
+import hu.alex.BookPac.Book;
+import hu.alex.BookPac.BookDAO;
+import hu.alex.BookPac.JpaBookDAO;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -30,6 +30,18 @@ public class MainClass extends Application {
 
     public static void main(String[] args) throws SQLException {
         startDatabase();
+
+//        BookDAO bookDAO = new JpaBookDAO();
+//        Book book = new Book();
+//
+//        book.setAuthor("Dmitry Glukhovsky");
+//        book.setTitle("Metro 2033");
+//        book.setReleaseDate(LocalDate.of(2010,3,18));
+//        book.setPageNumber(458);
+//        book.setQuantity(100);
+//        book.setGenre("Post-apocalyptic");
+//
+//        bookDAO.saveBook(book);
 //        UserDAO userDAO = new JpaUserDAO();
 //        User user = new User();
 //

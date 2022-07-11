@@ -65,12 +65,12 @@
                               <Font name="System Bold Italic" size="15.0" />
                            </font>
                         </Label>
-                        <ListView focusTraversable="false" GridPane.rowIndex="1" />
-                        <ListView focusTraversable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <ListView focusTraversable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                        <ListView focusTraversable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                        <ListView focusTraversable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                        <ListView focusTraversable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                        <ListView fx:id="titleListView" focusTraversable="false" GridPane.rowIndex="1" />
+                        <ListView fx:id="authorListView" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <ListView fx:id="genreListView" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <ListView fx:id="releaseDateListView" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <ListView fx:id="pageNumberListView" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <ListView fx:id="quantityListView" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
                      </children>
                   </GridPane>
                </children></AnchorPane>

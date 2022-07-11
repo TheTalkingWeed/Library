@@ -18,6 +18,8 @@ public class Book {
     private int quantity;
     private String genre;
 
+
+
     public int getId() {
         return id;
     }
