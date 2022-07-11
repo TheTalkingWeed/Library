@@ -1,14 +1,13 @@
 package hu.alex.Controller;
 
+import javafx.fxml.FXML;
 import hu.alex.BookPac.Book;
 import hu.alex.BookPac.BookDAO;
 import hu.alex.BookPac.JpaBookDAO;
 import hu.alex.UserPac.JpaUserDAO;
 import hu.alex.UserPac.User;
 import hu.alex.UserPac.UserDAO;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 
 import java.net.URL;
@@ -37,6 +36,15 @@ public class MainController implements Initializable {
     @FXML
     private ListView<String> titleListView;
 
+    @FXML
+    private ListView<String> userEmailListView;
+
+    @FXML
+    private ListView<String> userFirstNameListView;
+
+    @FXML
+    private ListView<String> userLastNameListView;
+
     UserDAO userDAO = new JpaUserDAO();
     private List<User> users = new ArrayList<>(userDAO.getUsers());
 
@@ -44,6 +52,19 @@ public class MainController implements Initializable {
     private List<Book> books = new ArrayList<>(bookDAO.getBooks());
 
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        showBooks();
+        showUsers();
+    }
+
+    private void showUsers(){
+        for (User u:users) {
+            userEmailListView.getItems().add(u.getEmail());
+            userFirstNameListView.getItems().add(u.getFname());
+            userLastNameListView.getItems().add(u.getLname());
+        }
+    }
 
     private void showBooks() {
         for (Book b:books) {
@@ -56,8 +77,4 @@ public class MainController implements Initializable {
         }
     }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        showBooks();
-    }
 }

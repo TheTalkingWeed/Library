@@ -24,6 +24,7 @@ public class MainClass extends Application {
         Scene scene = new Scene(root);
         stage.setTitle("Login");
         stage.setScene(scene);
+
         stage.setResizable(false);
         stage.show();
     }
@@ -68,9 +69,8 @@ public class MainClass extends Application {
 
     private static Server s = new Server();
 
-
     private static void startDatabase() throws SQLException {
-        new Server().runTool("-tcp", "-web", "-ifNotExists");
+        s.runTool("-tcp", "-web", "-ifNotExists");
     }
 
     private static void stopDatabase()  {
