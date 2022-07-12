@@ -36,8 +36,9 @@
           <RowConstraints fillHeight="false" maxHeight="90.0" minHeight="10.0" prefHeight="86.0" vgrow="SOMETIMES" />
           <RowConstraints maxHeight="106.0" minHeight="10.0" prefHeight="86.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="69.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
@@ -66,6 +67,14 @@
             <Button mnemonicParsing="false" onAction="#UserLoginButton" prefHeight="50.0" prefWidth="110.0" style="-fx-background-color: #CCEA8D;" text="Login" GridPane.rowIndex="4">
                <font>
                   <Font name="System Bold" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="userRegisterButton" mnemonicParsing="false" onAction="#UserRegisterButtonClicked" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #CCEA8D;" text="Register" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
