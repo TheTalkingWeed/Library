@@ -7,13 +7,20 @@ import hu.alex.BookPac.JpaBookDAO;
 import hu.alex.UserPac.JpaUserDAO;
 import hu.alex.UserPac.User;
 import hu.alex.UserPac.UserDAO;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ListView;
+import javafx.stage.Stage;
 
+import java.awt.event.ActionEvent;
+import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
@@ -51,6 +58,15 @@ public class MainController implements Initializable {
     BookDAO bookDAO = new JpaBookDAO();
     private List<Book> books = new ArrayList<>(bookDAO.getBooks());
 
+    public void addBookButtonPushed(javafx.event.ActionEvent event) throws IOException {
+        Stage stage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/book_register_interface.fxml"));
+        Scene scene = new Scene(root);
+        stage.setTitle("Book register");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -76,5 +92,7 @@ public class MainController implements Initializable {
             titleListView.getItems().add(b.getTitle());
         }
     }
+
+
 
 }
